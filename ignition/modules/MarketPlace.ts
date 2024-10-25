@@ -2,9 +2,10 @@ import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 
 const MarketPlaceModule = buildModule("MarketPlaceModule", (m) => {
 
-  const MarketPlace = m.contract("MarketPlace");
+  const market = m.contract("SimpleMarketplace"); 
 
-  return { MarketPlace };
+
+  return { market };
 });
 
 export default MarketPlaceModule;
